@@ -1,11 +1,17 @@
-[[http://www.php.net|{{wiki:dokuwiki-128.png}}]]
+[http://www.php.net|{{wiki:dokuwiki-128.png}}]
 
 ==== Headline Level 3 ====
+
 === Headline Level 4 ===
+
 == Headline Level 5 ==
+
 ==== Headline Level 3 ====
+
 === Headline Level 4 ===
+
 == Headline Level 5 ==
+
 
   * This is a list
   * The second item
