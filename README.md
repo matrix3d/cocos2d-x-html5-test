@@ -1,24 +1,86 @@
+[[http://www.php.net|{{wiki:dokuwiki-128.png}}]]
+
+==== Headline Level 3 ====
+=== Headline Level 4 ===
+== Headline Level 5 ==
+==== Headline Level 3 ====
+=== Headline Level 4 ===
+== Headline Level 5 ==
+
+  * This is a list
+  * The second item
+    * You may have different levels
+  * Another item
+
+  - The same list but ordered
+  - Another item
+    - Just use indention for deeper levels
+  - That's it
+
+^ Heading 1      ^ Heading 2       ^ Heading 3          ^
+| Row 1 Col 1    | Row 1 Col 2     | Row 1 Col 3        |
+| Row 2 Col 1    | some colspan (note the double pipe) ||
+| Row 3 Col 1    | Row 3 Col 2     | Row 3 Col 3        |
+
+<code>
+This is preformatted code all spaces are preserved: like              <-this
+</code>
+
+<code java>
+package flash.__native 
+{
+	/**
+	 * ...
+	 * @author lizhi
+	 */
+	public class ObjectMap 
+	{
+		public var keys:Array = [];
+		public var values:Array = [];
+		public function ObjectMap() 
+		{
+			
+		}
+		
+		public function get(key:Object):Object {
+			return values[keys.indexOf(key)];
+		}
+		
+		public function set(key:Object, value:Object):void {
+			var i:Number = keys.indexOf(key);
+			if (i ==-1) {
+				i = keys.length;
+				keys.push(key);
+			}
+			values[i] = value;
+		}
+		
+	}
+
+}
+</code>
+
 cocos2d-x-html5-test
 ====================
 
 
-cocos2d x ¿ÉÒÔÓÃµÄÓïÑÔ
+cocos2d x å¯ä»¥ç”¨çš„è¯­è¨€
 c++
 lua
 js
 
 c++ 
-ÓÅÊÆ£¬ÎÈ¶¨ ËÙ¶È¿ì
-È±µã£¬±àÒëÂı£¬²»ÀûÓÚ¿ìËÙ¿ª·¢
-¿ª·¢¹¤¾ß vs2012
+ä¼˜åŠ¿ï¼Œç¨³å®š é€Ÿåº¦å¿«
+ç¼ºç‚¹ï¼Œç¼–è¯‘æ…¢ï¼Œä¸åˆ©äºå¿«é€Ÿå¼€å‘
+å¼€å‘å·¥å…· vs2012
 
-lua js ÊôÓÚ½Å±¾ 
-ÓÅµã Ö»Ğè±àÒëÒ»´Îc++³ÌĞò£¬¸ü¸Ä½Å±¾ºóÎŞĞè±àÒë¼´¿ÉÔËĞĞ
+lua js å±äºè„šæœ¬ 
+ä¼˜ç‚¹ åªéœ€ç¼–è¯‘ä¸€æ¬¡c++ç¨‹åºï¼Œæ›´æ”¹è„šæœ¬åæ— éœ€ç¼–è¯‘å³å¯è¿è¡Œ
 
-cocos2dx html5£¨ÍÆ¼ö£© ÊôÓÚ cocos2dxµÄÒ»¸ö·ÖÖ§¡£
-ÓÅµã ¿ÉÒÔÔÚä¯ÀÀÆ÷ÖĞÖ±½ÓÔËĞĞ¡£°Ñjs´úÂëcopyµ½ cocos2dxµÄjs¹¤³ÌÀï£¬¼´¿ÉÔÚÊÖ»úÖĞÔËĞĞ¡£
+cocos2dx html5ï¼ˆæ¨èï¼‰ å±äº cocos2dxçš„ä¸€ä¸ªåˆ†æ”¯ã€‚
+ä¼˜ç‚¹ å¯ä»¥åœ¨æµè§ˆå™¨ä¸­ç›´æ¥è¿è¡Œã€‚æŠŠjsä»£ç copyåˆ° cocos2dxçš„jså·¥ç¨‹é‡Œï¼Œå³å¯åœ¨æ‰‹æœºä¸­è¿è¡Œã€‚
 
-¿ª·¢¹¤¾ßÍÆ¼ö  idea ¹È¸èËÑË÷ÏÂÔØ
+å¼€å‘å·¥å…·æ¨è  idea è°·æ­Œæœç´¢ä¸‹è½½
 
 
 http://matrix3d.github.io/cocos2d/2013/11/16/cocos2d-test1/
